@@ -1,6 +1,6 @@
 // @flow
 
-import { PureComponent } from 'react';
+import { PureComponent } from './PureComponent';
 import isRangeVisible from './isRangeVisible';
 import scanForUnloadedRanges from './scanForUnloadedRanges';
 
