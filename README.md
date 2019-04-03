@@ -1,6 +1,8 @@
 # inferno-window-infinite-loader
 
-> InfiniteLoader component inspired by react-virtualized but for use with [inferno-window](https://github.com/rajjejosesfsson/inferno-window/)
+> InfiniteLoader component inspired by react-virtualized but for use with [inferno-window](https://github.com/rajjejosesfsson/inferno-window/) 
+
+> Note: this is a port from the origin project [react-window-infinite-loader](https://github.com/bvaughn/react-window-infinite-loader) made by [bvaughn](https://github.com/bvaughn/) 
 
 ## Install
 
