@@ -1,15 +1,11 @@
-# react-window-infinite-loader
+# inferno-window-infinite-loader
 
-> InfiniteLoader component inspired by react-virtualized but for use with [react-window](https://github.com/bvaughn/react-window/)
+> InfiniteLoader component inspired by react-virtualized but for use with [inferno-window](https://github.com/rajjejosesfsson/inferno-window/)
 
 ## Install
 
 ```bash
-# Yarn
-yarn add react-window-infinite-loader
-
-# NPM
-npm install --save react-window-infinite-loader
+npm install --save inferno-window-infinite-loader
 ```
 
 ## Documentation
@@ -25,7 +21,7 @@ npm install --save react-window-infinite-loader
 
 ## Example usage
 
-The snippet below shows a basic example of how the `InfiniteLoader` can be used to wrap either a `FixedSizeList` or `VariableSizeList` from `react-window`.
+The snippet below shows a basic example of how the `InfiniteLoader` can be used to wrap either a `FixedSizeList` or `VariableSizeList` from `inferno-window`.
 
 ```js
 // This value is arbitrary.
@@ -49,7 +45,7 @@ const itemCount = 1000;
 </InfiniteLoader>
 ```
 
-[Try it on Code Sandbox](https://codesandbox.io/s/5wqo7z2np4)
+[Try it on Code Sandbox](https://codesandbox.io/s/v3q6przwx0)
 
 ##  Creating an infinite loading list
 
@@ -116,8 +112,8 @@ function ExampleWrapper({
 }
 ```
 
-[Try it on Code Sandbox](https://codesandbox.io/s/x70ly749rq)
+[Try it on Code Sandbox](https://codesandbox.io/s/4xjvr68vx7)
 
 ## License
 
-MIT © [bvaughn](https://github.com/bvaughn)
+MIT © [rajjejosefsson](https://github.com/rajjejosefsson)

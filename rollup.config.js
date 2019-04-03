@@ -1,34 +1,37 @@
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
-import external from 'rollup-plugin-peer-deps-external';
-import postcss from 'rollup-plugin-postcss';
-import resolve from 'rollup-plugin-node-resolve';
-import url from 'rollup-plugin-url';
-
+import nodeResolve from 'rollup-plugin-node-resolve';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import pkg from './package.json';
 
-export default {
-  input: 'src/index.js',
-  output: [
-    {
+const input = './src/index.js';
+
+export default [
+  {
+    input,
+    output: {
       file: pkg.main,
       format: 'cjs',
     },
-    {
+    plugins: [
+      peerDepsExternal(),
+      babel({ exclude: 'node_modules/**' }),
+      nodeResolve(),
+      commonjs(),
+    ],
+  },
+
+  {
+    input,
+    output: {
       file: pkg.module,
       format: 'esm',
     },
-  ],
-  plugins: [
-    external(),
-    postcss({
-      modules: true,
-    }),
-    url(),
-    babel({
-      exclude: 'node_modules/**',
-    }),
-    resolve(),
-    commonjs(),
-  ],
-};
+    plugins: [
+      peerDepsExternal(),
+      babel({ exclude: 'node_modules/**' }),
+      nodeResolve(),
+      commonjs(),
+    ],
+  },
+];
